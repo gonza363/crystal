@@ -1,0 +1,173 @@
+% In Latex the % symbol will indicate a comment. Text following the % symbol will not appear in the generated document and allow you to annotate your latex file
+% This document is a modified version of the "sample document" provided by the American Journal of Physics through their author's guide.
+
+\documentclass[prl,onecolumn]{revtex4-1}  % The "prl" tells latex to use the physical review letters formatting with one column from the revtex4.1 document class
+%\documentclass[prl,preprint,linenumbers]{revtex4-1}  % other options can change formatting for various purposes. For example you can include line numbers with "linenumbers" and the "preprint" to make things easier to edit. Similarly you could use "singlecolumn" and "doublespace"
+% NOTE: only a single documentclass should be declared. Comment out the other one. You can try changing styles and classes and compiling the document to see one of the benefits of Latex, the ease of reformatting.
+
+
+% Latex has several packages that maybe needed to use things like figures or tables or certain math fonts. google is your friend. If there is something you want to do using latex, odds are several other people have wanted to do this in the past and a search for "how do you 'thing i want to do' in Latex" will likely lead to several forums and answers to your question.
+\usepackage{amsmath}  % needed for \tfrac, \bmatrix, etc.
+\usepackage{amsfonts} % needed for bold Greek, Fraktur, and blackboard bold
+\usepackage{graphicx} % needed for figures
+\usepackage{hyperref} % needed for clickable links
+\usepackage{lipsum} 
+\newcommand{\term}[0]{Fall 2018}  %Another great feature of Latex is it allows you to define macros (google "newcommand in latex" for details). Here i've made it so anytime i write \term the document will put Fall 2018. I can modify this command in future semesters and avoid having to find every instance in the document I refer to the semester of the class.
+
+\begin{document}
+
+% Be sure to use the \title, \author, \affiliation, and \abstract macros
+% to format your title page.  Don't use lower-level macros to  manually
+% adjust the fonts and centering.
+
+\title{Crystal Luminescence }
+% In a long title you can use \\ to force a line break at a certain location.
+
+\author{Andrew Gonzales}
+\email{gonza363@cougars.csusm.edu} % optional
+% If there were a second author at the same address, we would put another 
+% \author{} statement here.  Don't combine multiple authors in a single
+% \author statement.
+% Please provide a full mailing address here.
+\affiliation{Department of Physics, California State University San Marcos, San Marcos, CA 92096}
+
+\author{Joshua Lucas}
+\email{Lucas035@cougars.csusm.edu}
+\affiliation{Department of Physics, California State University San Marcos, San Marcos, CA 92096}
+
+% See the REVTeX documentation for more examples of author and affiliation lists.
+% or google
+
+\date{\today}
+
+\begin{abstract}
+The emission of light from solids has been studied since at least the beginning of the seventeenth century (citation needed) 
+\\Phosphorus (light bearer)  
+\\optical properties
+\\applications
+
+
+\end{abstract}
+% All papers should include an abstract. 
+
+\maketitle % title page is now complete
+
+
+\section{Introduction} % Section titles are automatically converted to all-caps.
+
+\section{Electron Orbitals}
+To understand the optical properties of solids we first need to understand the dynamics of an atom's  energy level. 
+\subsection*{Electron Configuration.. Pauli Exclusion}
+We can model the atom as being a positively charged nucleus orbited by a negatively charged electron. As the the number of electrons increases   The Pauli exclusion principal states that no two electrons in an single atom can exsist in the exact same state.  
+\subsection*{Closed shell... very stable}
+The electrons fully occupy orbital... shell is considered closed... harder to jump to higher level which makes it very stable..  
+\subsection*{Ground state..}
+Lowest energy level... preferred state of atom... 
+\subsection*{Valence Electrons...}
+The valence electron is in a open shell, less energy to raise its energy level
+\subsection*{Excited state..Absorption.}
+The electron jumps to a higher orbit with a higher energy level
+absorbs energy from a source all or nothing (quantum energy)
+
+
+\subsection*{Emission and Spectra}
+The orbital can relax down to a lower state, when it does it emits a photon where the wavelength is related to the quantized energy released.
+\begin{equation}
+E = \hbar \omega
+\end{equation}
+
+\section{Energy Bands}
+
+\subsection*{Tight binding chains model...}
+\lipsum[1-1]
+\subsection*{Electron filling Bands..}
+\lipsum[1-1]
+\subsection*{Fermi energy..}
+\lipsum[1-1]
+\subsection*{Band structure..}
+\lipsum[1-1]
+\subsection*{Band Gap ..Semi conductor conductor insulator }
+\lipsum[1-1]
+\subsection*{Conduction band}
+\lipsum[1-1]
+\subsection*{Forbidden region..}
+\lipsum[1-1]
+\subsection*{filled valence... }
+\lipsum[1-1]
+\subsection*{Electrons holes..}
+\lipsum[1-1]
+\subsection*{Doping}
+\lipsum[1-1]
+\section{Luminescence}
+Types of Luminescence..
+\subsection*{Tribolumincence..}
+\lipsum[1-1]
+\subsection*{sonolumincence..}
+\lipsum[1-1]
+\subsection*{cathode..}
+\lipsum[1-1]
+\subsection*{scintillation..}
+
+see through glass, crystals cant bridge gap..
+Excite energy level, relax back and emit photon.. UV..
+impurities...
+Change color... hue
+\subsection*{Defects...}
+\lipsum[1-1]
+\subsection*{Traps...}
+Pattern?...
+Doping affects band gap...
+
+\section{Applications}
+Identification of material through emission lines.
+\subsection*{Scintillation...}
+particle detection.
+
+
+
+
+\section{Endnotes and references}
+
+
+\section{Conclusion}
+
+
+
+\appendix*   % Omit the * if there's more than one appendix.
+
+\section{Uninteresting stuff}
+
+
+
+\begin{acknowledgments}
+
+We gratefully acknowledge the American Journal of Physics for providing a sample
+\LaTeX\ document that was easy for me to edit and adapt for this purpose. 
+
+\end{acknowledgments}
+
+
+\begin{thebibliography}{99}
+% The numeral (here 99) in curly braces is nominally the number of entries in
+% the bibliography. It's supposed to affect the amount of space around the
+% numerical labels, so only the number of digits should matter--and even that
+% seems to make no discernible difference.
+
+
+
+\bibitem{Kittel} Kittel, C Introduction to Solid State Physics
+
+\bibitem{Virk} Virk, H. S. (Ed.). (2013). Luminescence related phenomena and their applications : special topic volume with invited peer reviewed papers only. 
+
+\bibitem{Gotze} G\"otze J  Anal Bioanal Chem (2002) 374 :703–708
+
+\bibitem{Lou}Lou, L. (2003). \textit{Introduction to phonons and electrons}.
+
+\bibitem{Chen} Chen, R., Pagonis, V., \& Lawless, J. L. (2010). \textit{Thermally and optically stimulated luminescence : a simulation approach. }
+
+\end{thebibliography}
+
+
+
+
+\end{document}
